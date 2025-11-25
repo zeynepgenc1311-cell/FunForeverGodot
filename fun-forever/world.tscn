@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://bhsc8gaunoiru"]
+[gd_scene load_steps=0 format=3 uid="uid://bhsc8gaunoiru"]
 
 [node name="WORLD" type="Node3D"]
 
