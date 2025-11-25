@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://d3lkmrv47stv3"]
+
+[ext_resource type="PackedScene" uid="uid://ij068wseolad" path="res://Assets/City_Pack_Asset/Paht/Stomach_3.fbx" id="1_y2yqg"]
+
+[node name="3D" type="Node3D"]
+
+[node name="3DMesh" type="MeshInstance3D" parent="."]
+transform = Transform3D(39.53245, 0, 0, 0, 1, 0, 0, 0, 70.322784, -0.0059714317, 0, -0.011595964)
+
+[node name="Stomach_3" parent="." instance=ExtResource("1_y2yqg")]
