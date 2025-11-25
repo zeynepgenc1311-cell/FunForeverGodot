@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://d3lkmrv47stv3"]
+[gd_scene load_steps=13 format=3 uid="uid://d3lkmrv47stv3"]
 
 [ext_resource type="PackedScene" uid="uid://ij068wseolad" path="res://Assets/City_Pack_Asset/Paht/Stomach_3.fbx" id="1_y2yqg"]
 [ext_resource type="PackedScene" uid="uid://dntujgp8qn3fs" path="res://Assets/City_Pack_Asset/Paht/Paht_2.fbx" id="2_73ytm"]
@@ -6,6 +6,12 @@
 [ext_resource type="PackedScene" uid="uid://cjbckuk1tnq7e" path="res://Assets/City_Pack_Asset/Paht/Paht_3.fbx" id="4_2ve6t"]
 [ext_resource type="PackedScene" uid="uid://blc4wh26jkktn" path="res://Assets/City_Pack_Asset/Paht/grass.fbx" id="5_7xjic"]
 [ext_resource type="PackedScene" uid="uid://btoc6sr4ce40x" path="res://Assets/City_Pack_Asset/Paht/Sidewalk.fbx" id="5_iju8q"]
+[ext_resource type="PackedScene" uid="uid://drilynskj1t6n" path="res://Assets/City_Pack_Asset/Rubbish_Lamp_Park/Park_1.fbx" id="7_xe6jm"]
+[ext_resource type="PackedScene" uid="uid://cpqum8o7r6p4f" path="res://Assets/City_Pack_Asset/Rubbish_Lamp_Park/seesaw_1.fbx" id="8_4q1qd"]
+[ext_resource type="PackedScene" uid="uid://ox7jxh2r57q4" path="res://Assets/City_Pack_Asset/Rubbish_Lamp_Park/Rubbish_6.fbx" id="9_tt8b8"]
+[ext_resource type="PackedScene" uid="uid://bk4ka4tib0lpr" path="res://Assets/City_Pack_Asset/Rubbish_Lamp_Park/Rubbish_5.fbx" id="10_iekpf"]
+[ext_resource type="PackedScene" uid="uid://cia6rd0ufyrj8" path="res://Assets/City_Pack_Asset/Rubbish_Lamp_Park/Rubbish_4.fbx" id="11_i57ke"]
+[ext_resource type="PackedScene" uid="uid://ccwjfdtaevkcs" path="res://Assets/City_Pack_Asset/Rubbish_Lamp_Park/Rubbish_3.fbx" id="12_bqoay"]
 
 [node name="3D" type="Node3D"]
 
@@ -1946,3 +1952,21 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.954055, 0, -21.388617)
 
 [node name="Sidewalk28" parent="Ambient/Sidewalk" instance=ExtResource("5_iju8q")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.954055, 0, -18.978117)
+
+[node name="Park_1" parent="." instance=ExtResource("7_xe6jm")]
+transform = Transform3D(-0.04065494, 0, 0.9991732, 0, 1, 0, -0.9991732, 0, -0.04065494, 30.142487, 0.17109954, 27.10666)
+
+[node name="seesaw_1" parent="." instance=ExtResource("8_4q1qd")]
+transform = Transform3D(0.664651, 0.02759818, 0, -0.055017997, 0.33340287, 0, 0, 0, 0.6592789, 19.657524, 0.5560124, 27.337818)
+
+[node name="Rubbish_6" parent="." instance=ExtResource("9_tt8b8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.03027, 0, 32.460033)
+
+[node name="Rubbish_5" parent="." instance=ExtResource("10_iekpf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.682098, 0, 32.469692)
+
+[node name="Rubbish_4" parent="." instance=ExtResource("11_i57ke")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.332916, 0, 32.45623)
+
+[node name="Rubbish_3" parent="." instance=ExtResource("12_bqoay")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.003885, 0, 32.42211)
