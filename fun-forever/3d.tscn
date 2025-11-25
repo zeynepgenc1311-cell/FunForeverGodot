@@ -1946,3 +1946,5 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.954055, 0, -21.388617)
 
 [node name="Sidewalk28" parent="Ambient/Sidewalk" instance=ExtResource("5_iju8q")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.954055, 0, -18.978117)
+
+[node name="deneme" type="Node" parent="."]
