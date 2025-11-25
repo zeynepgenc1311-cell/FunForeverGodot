@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://d3lkmrv47stv3"]
+[gd_scene load_steps=26 format=3 uid="uid://d3lkmrv47stv3"]
 
 [ext_resource type="PackedScene" uid="uid://ij068wseolad" path="res://Assets/City_Pack_Asset/Paht/Stomach_3.fbx" id="1_y2yqg"]
 [ext_resource type="PackedScene" uid="uid://dntujgp8qn3fs" path="res://Assets/City_Pack_Asset/Paht/Paht_2.fbx" id="2_73ytm"]
@@ -24,6 +24,7 @@
 [ext_resource type="PackedScene" uid="uid://7m5vqb0o3p75" path="res://Assets/City_Pack_Asset/supermarket/supermarket.fbx" id="22_ji348"]
 [ext_resource type="PackedScene" uid="uid://bg4iwrlqebv3b" path="res://Assets/City_Pack_Asset/Home/Shop_1.fbx" id="23_de8pr"]
 [ext_resource type="PackedScene" uid="uid://botfhmugwumr7" path="res://Assets/City_Pack_Asset/Home/ultimate_japanese_konbini.glb" id="24_kucaa"]
+[ext_resource type="PackedScene" uid="uid://doxrxjsthypbg" path="res://Assets/City_Pack_Asset/Ev/Low Poly House.fbx" id="25_i8ph4"]
 
 [node name="3D" type="Node3D"]
 
@@ -2422,3 +2423,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.42344, 0, -47.189213)
 
 [node name="Sketchfab_Scene2" parent="." instance=ExtResource("24_kucaa")]
 transform = Transform3D(2.384976e-10, 0, -0.038, 0, 0.016, 0, 0.02, 0, 4.5314544e-10, -30.723341, 1.019906, -56.846657)
+
+[node name="Low Poly House" parent="." instance=ExtResource("25_i8ph4")]
+transform = Transform3D(0.023000786, 0.0110804485, 0.99967396, 0.00018264019, 0.9999385, -0.0110875815, -0.99973536, 0.00043760287, 0.022997346, -7.2506957, 0.34415054, 46.355934)
+
+[node name="Low Poly House2" parent="." instance=ExtResource("25_i8ph4")]
+transform = Transform3D(0.010332203, 0, 0.99994665, 0, 1, 0, -0.99994665, 0, 0.010332203, -14.783209, 0.3840387, 46.41202)
+
+[node name="Low Poly House3" parent="." instance=ExtResource("25_i8ph4")]
+transform = Transform3D(-0.0115537895, 0, 0.99993324, 0, 1, 0, -0.99993324, 0, -0.0115537895, -22.166197, 0.3540163, 46.264595)
