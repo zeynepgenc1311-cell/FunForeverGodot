@@ -1948,3 +1948,5 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.954055, 0, -21.388617)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.954055, 0, -18.978117)
 
 [node name="deneme" type="Node" parent="."]
+
+[node name="deneme2" type="Node" parent="."]
