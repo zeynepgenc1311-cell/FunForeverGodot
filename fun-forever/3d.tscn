@@ -1,10 +1,71 @@
-[gd_scene load_steps=2 format=3 uid="uid://d3lkmrv47stv3"]
+[gd_scene load_steps=6 format=3 uid="uid://d3lkmrv47stv3"]
 
 [ext_resource type="PackedScene" uid="uid://ij068wseolad" path="res://Assets/City_Pack_Asset/Paht/Stomach_3.fbx" id="1_y2yqg"]
+[ext_resource type="PackedScene" uid="uid://dntujgp8qn3fs" path="res://Assets/City_Pack_Asset/Paht/Paht_2.fbx" id="2_73ytm"]
+[ext_resource type="PackedScene" uid="uid://ewm2s802kew0" path="res://Assets/City_Pack_Asset/Paht/Paht_1.fbx" id="3_2ve6t"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_y2yqg"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fji6l"]
+albedo_color = Color(0.08, 0.08, 0.08, 1)
+roughness = 0.0
 
 [node name="3D" type="Node3D"]
 
-[node name="3DMesh" type="MeshInstance3D" parent="."]
-transform = Transform3D(39.53245, 0, 0, 0, 1, 0, 0, 0, 70.322784, -0.0059714317, 0, -0.011595964)
+[node name="Ground" type="MeshInstance3D" parent="."]
+transform = Transform3D(7935.169, 0, 0, 0, 0.9995739, 0, 0, 0, 3663.223, 0, 0, 0)
+mesh = SubResource("PlaneMesh_y2yqg")
+surface_material_override/0 = SubResource("StandardMaterial3D_fji6l")
 
-[node name="Stomach_3" parent="." instance=ExtResource("1_y2yqg")]
+[node name="Center" parent="Ground" instance=ExtResource("1_y2yqg")]
+transform = Transform3D(0.00012602126, 0, 0, 0, 1.0004263, 0, 0, 0, 0.00027298366, 1.021215e-05, 0.25206125, 7.933187e-05)
+
+[node name="path" type="Node" parent="Ground"]
+
+[node name="Paht_2" parent="Ground/path" instance=ExtResource("2_73ytm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.596014, -0.0026550293, 0.5472437)
+
+[node name="Paht_3" parent="Ground/path" instance=ExtResource("2_73ytm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.596014, -0.0026550293, 7.862913)
+
+[node name="Paht_4" parent="Ground/path" instance=ExtResource("2_73ytm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.596014, -0.0026550293, -6.768422)
+
+[node name="Paht_5" parent="Ground/path" instance=ExtResource("2_73ytm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.716608, -0.0026550293, 0.5472437)
+
+[node name="Paht_6" parent="Ground/path" instance=ExtResource("2_73ytm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.716608, -0.0026550293, 7.862913)
+
+[node name="Paht_7" parent="Ground/path" instance=ExtResource("2_73ytm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.716608, -0.0026550293, -6.768422)
+
+[node name="Paht_8" parent="Ground/path" instance=ExtResource("2_73ytm")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.00431633, -0.0026550293, -14.066007)
+
+[node name="Paht_9" parent="Ground/path" instance=ExtResource("2_73ytm")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 7.319515, -0.0026550293, -14.0572405)
+
+[node name="Paht_10" parent="Ground/path" instance=ExtResource("2_73ytm")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -7.310878, -0.0026550293, -14.074769)
+
+[node name="Paht_1" parent="Ground/path" instance=ExtResource("3_2ve6t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.445537, -0.0026550293, -13.902058)
+
+[node name="Paht_11" parent="Ground/path" instance=ExtResource("3_2ve6t")]
+transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 14.484842, -0.0026550293, -13.904697)
+
+[node name="Paht_12" parent="Ground/path" instance=ExtResource("2_73ytm")]
+transform = Transform3D(0.0018147297, 0, -0.99999964, 0, 1, 0, 0.99999964, 0, 0.00038674643, 0.05322647, -0.0026550293, 15.173443)
+
+[node name="Paht_13" parent="Ground/path" instance=ExtResource("2_73ytm")]
+transform = Transform3D(0.0018147297, 0, -0.99999964, 0, 1, 0, 0.99999964, 0, 0.00038674643, -7.2619753, -0.0026550293, 15.170803)
+
+[node name="Paht_14" parent="Ground/path" instance=ExtResource("2_73ytm")]
+transform = Transform3D(0.0018147297, 0, -0.99999964, 0, 1, 0, 0.99999964, 0, 0.00038674643, 7.3684254, -0.0026550293, 15.176078)
+
+[node name="Paht_15" parent="Ground/path" instance=ExtResource("3_2ve6t")]
+transform = Transform3D(-0.99999964, 0, -0.001814635, 0, 1, 0, 0.00038672626, 0, -0.99999964, 14.502939, -0.0026550293, 14.997388)
+
+[node name="Paht_16" parent="Ground/path" instance=ExtResource("3_2ve6t")]
+transform = Transform3D(-0.0018145402, 0, 0.99999964, 0, 1, 0, -0.99999964, 0, -0.00038670606, -14.427426, -0.0026550293, 15.024261)
