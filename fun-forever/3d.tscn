@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://d3lkmrv47stv3"]
+[gd_scene load_steps=24 format=3 uid="uid://d3lkmrv47stv3"]
 
 [ext_resource type="PackedScene" uid="uid://ij068wseolad" path="res://Assets/City_Pack_Asset/Paht/Stomach_3.fbx" id="1_y2yqg"]
 [ext_resource type="PackedScene" uid="uid://dntujgp8qn3fs" path="res://Assets/City_Pack_Asset/Paht/Paht_2.fbx" id="2_73ytm"]
@@ -22,6 +22,7 @@
 [ext_resource type="PackedScene" uid="uid://238r4octrv17" path="res://Assets/City_Pack_Asset/Tree/Tree_9.fbx" id="20_q8pi8"]
 [ext_resource type="PackedScene" uid="uid://dsmki11a4s2ca" path="res://Assets/City_Pack_Asset/Rubbish_Lamp_Park/park_bench.glb" id="21_7bhk5"]
 [ext_resource type="PackedScene" uid="uid://7m5vqb0o3p75" path="res://Assets/City_Pack_Asset/supermarket/supermarket.fbx" id="22_ji348"]
+[ext_resource type="PackedScene" uid="uid://bg4iwrlqebv3b" path="res://Assets/City_Pack_Asset/Home/Shop_1.fbx" id="23_de8pr"]
 
 [node name="3D" type="Node3D"]
 
@@ -2414,3 +2415,6 @@ transform = Transform3D(21.308, 0, 0, 0, 21.078, 0, 0, 0, 15, 30.753487, 0.09198
 
 [node name="supermarket" parent="." instance=ExtResource("22_ji348")]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 20.703205, 0.67926407, -36.471428)
+
+[node name="Shop_1" parent="." instance=ExtResource("23_de8pr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.42344, 0, -47.189213)
