@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://d3lkmrv47stv3"]
+[gd_scene load_steps=21 format=3 uid="uid://d3lkmrv47stv3"]
 
 [ext_resource type="PackedScene" uid="uid://ij068wseolad" path="res://Assets/City_Pack_Asset/Paht/Stomach_3.fbx" id="1_y2yqg"]
 [ext_resource type="PackedScene" uid="uid://dntujgp8qn3fs" path="res://Assets/City_Pack_Asset/Paht/Paht_2.fbx" id="2_73ytm"]
@@ -6,12 +6,20 @@
 [ext_resource type="PackedScene" uid="uid://cjbckuk1tnq7e" path="res://Assets/City_Pack_Asset/Paht/Paht_3.fbx" id="4_2ve6t"]
 [ext_resource type="PackedScene" uid="uid://blc4wh26jkktn" path="res://Assets/City_Pack_Asset/Paht/grass.fbx" id="5_7xjic"]
 [ext_resource type="PackedScene" uid="uid://btoc6sr4ce40x" path="res://Assets/City_Pack_Asset/Paht/Sidewalk.fbx" id="5_iju8q"]
+[ext_resource type="PackedScene" uid="uid://ohuh7f8plqo5" path="res://Assets/City_Pack_Asset/Rubbish_Lamp_Park/Street Lamp_1.fbx" id="7_iekpf"]
 [ext_resource type="PackedScene" uid="uid://drilynskj1t6n" path="res://Assets/City_Pack_Asset/Rubbish_Lamp_Park/Park_1.fbx" id="7_xe6jm"]
 [ext_resource type="PackedScene" uid="uid://cpqum8o7r6p4f" path="res://Assets/City_Pack_Asset/Rubbish_Lamp_Park/seesaw_1.fbx" id="8_4q1qd"]
 [ext_resource type="PackedScene" uid="uid://ox7jxh2r57q4" path="res://Assets/City_Pack_Asset/Rubbish_Lamp_Park/Rubbish_6.fbx" id="9_tt8b8"]
 [ext_resource type="PackedScene" uid="uid://bk4ka4tib0lpr" path="res://Assets/City_Pack_Asset/Rubbish_Lamp_Park/Rubbish_5.fbx" id="10_iekpf"]
 [ext_resource type="PackedScene" uid="uid://cia6rd0ufyrj8" path="res://Assets/City_Pack_Asset/Rubbish_Lamp_Park/Rubbish_4.fbx" id="11_i57ke"]
 [ext_resource type="PackedScene" uid="uid://ccwjfdtaevkcs" path="res://Assets/City_Pack_Asset/Rubbish_Lamp_Park/Rubbish_3.fbx" id="12_bqoay"]
+[ext_resource type="PackedScene" uid="uid://dq8vqnhnvo4nr" path="res://Assets/City_Pack_Asset/Tree/Tree_4.fbx" id="14_25qfh"]
+[ext_resource type="PackedScene" uid="uid://b4v10k3s2jtp7" path="res://Assets/City_Pack_Asset/Tree/Tree_5.fbx" id="15_7bhk5"]
+[ext_resource type="PackedScene" uid="uid://xw0o4ft2143i" path="res://Assets/City_Pack_Asset/Tree/Tree_6.fbx" id="16_ji348"]
+[ext_resource type="PackedScene" uid="uid://2xixbsgw52ca" path="res://Assets/City_Pack_Asset/Tree/Tree_7.fbx" id="17_de8pr"]
+[ext_resource type="PackedScene" uid="uid://dbi7xv7sfqup" path="res://Assets/City_Pack_Asset/Tree/Tree_10.fbx" id="18_kucaa"]
+[ext_resource type="PackedScene" uid="uid://7ae708p4wh0i" path="res://Assets/City_Pack_Asset/Tree/Tree_11.fbx" id="19_i8ph4"]
+[ext_resource type="PackedScene" uid="uid://238r4octrv17" path="res://Assets/City_Pack_Asset/Tree/Tree_9.fbx" id="20_q8pi8"]
 
 [node name="3D" type="Node3D"]
 
@@ -1953,20 +1961,64 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.954055, 0, -21.388617)
 [node name="Sidewalk28" parent="Ambient/Sidewalk" instance=ExtResource("5_iju8q")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.954055, 0, -18.978117)
 
-[node name="Park_1" parent="." instance=ExtResource("7_xe6jm")]
+[node name="Street Lamp_1" parent="Ambient/Sidewalk" instance=ExtResource("7_iekpf")]
+transform = Transform3D(0.70710677, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, 0.70710677, 4.972, 0.445, 34.958)
+
+[node name="Park" type="Node" parent="Ambient"]
+
+[node name="Park_1" parent="Ambient/Park" instance=ExtResource("7_xe6jm")]
 transform = Transform3D(-0.04065494, 0, 0.9991732, 0, 1, 0, -0.9991732, 0, -0.04065494, 30.142487, 0.17109954, 27.10666)
 
-[node name="seesaw_1" parent="." instance=ExtResource("8_4q1qd")]
+[node name="seesaw_1" parent="Ambient/Park" instance=ExtResource("8_4q1qd")]
 transform = Transform3D(0.664651, 0.02759818, 0, -0.055017997, 0.33340287, 0, 0, 0, 0.6592789, 19.657524, 0.5560124, 27.337818)
 
-[node name="Rubbish_6" parent="." instance=ExtResource("9_tt8b8")]
+[node name="Rubbish_6" parent="Ambient/Park" instance=ExtResource("9_tt8b8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.03027, 0, 32.460033)
 
-[node name="Rubbish_5" parent="." instance=ExtResource("10_iekpf")]
+[node name="Rubbish_5" parent="Ambient/Park" instance=ExtResource("10_iekpf")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.682098, 0, 32.469692)
 
-[node name="Rubbish_4" parent="." instance=ExtResource("11_i57ke")]
+[node name="Rubbish_4" parent="Ambient/Park" instance=ExtResource("11_i57ke")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.332916, 0, 32.45623)
 
-[node name="Rubbish_3" parent="." instance=ExtResource("12_bqoay")]
+[node name="Rubbish_3" parent="Ambient/Park" instance=ExtResource("12_bqoay")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.003885, 0, 32.42211)
+
+[node name="Street Lamp_2" parent="Ambient/Park" instance=ExtResource("7_iekpf")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 22.1, 0.445, 34.895)
+
+[node name="Street Lamp_3" parent="Ambient/Park" instance=ExtResource("7_iekpf")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 39.56, 0.445, 20.168)
+
+[node name="Street Lamp_4" parent="Ambient/Park" instance=ExtResource("7_iekpf")]
+transform = Transform3D(-0.7071068, 0, -0.7071067, 0, 1, 0, 0.7071067, 0, -0.7071068, 39.427, 0.445, 5.424)
+
+[node name="Street Lamp_5" parent="Ambient/Park" instance=ExtResource("7_iekpf")]
+transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 19.315, 0.445, 5.234)
+
+[node name="Street Lamp_1" parent="Ambient/Park" instance=ExtResource("7_iekpf")]
+transform = Transform3D(-0.70710677, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, -0.70710677, 39.119595, 0.4445393, 34.74253)
+
+[node name="Street Lamp_6" parent="Ambient/Park" instance=ExtResource("7_iekpf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.809, 0.445, 19.836)
+
+[node name="Tree_5" parent="Ambient/Park" instance=ExtResource("15_7bhk5")]
+transform = Transform3D(1.7226114, 0, 0, 0, 1.8372705, 0, 0, 0, 1.6974647, 35.204506, -8.190444e-07, 9.674181)
+
+[node name="Tree_6" parent="Ambient/Park" instance=ExtResource("16_ji348")]
+transform = Transform3D(1.7226114, 0, 0, 0, 1.8372705, 0, 0, 0, 1.6974647, 6.998106, 5.7034534e-08, 32.25997)
+
+[node name="Tree_7" parent="Ambient/Park" instance=ExtResource("17_de8pr")]
+transform = Transform3D(1.7226114, 0, 0, 0, 1.8372705, 0, 0, 0, 1.6974647, 9.217903, 5.7034534e-08, 30.832233)
+
+[node name="Tree_10" parent="Ambient/Park" instance=ExtResource("18_kucaa")]
+transform = Transform3D(1.7226114, 0, 0, 0, 1.8372705, 0, 0, 0, 1.6974647, 37.416245, 5.7034534e-08, 14.321131)
+
+[node name="Tree_11" parent="Ambient/Park" instance=ExtResource("19_i8ph4")]
+transform = Transform3D(1.7226114, 0, 0, 0, 1.8372705, 0, 0, 0, 1.6974647, 9.300758, 5.7034534e-08, 32.771004)
+
+[node name="Tree_9" parent="Ambient/Park" instance=ExtResource("20_q8pi8")]
+transform = Transform3D(1.7226114, 0, 0, 0, 1.8372705, 0, 0, 0, 1.6974647, 34.324673, 5.7034534e-08, 14.06134)
+
+[node name="Tree_4" parent="Ambient/Park" instance=ExtResource("14_25qfh")]
+transform = Transform3D(-1.7012949, 0, -0.26621506, 0, 1.8372705, 0, 0.27015883, 0, -1.6764593, 35.833797, 5.7034534e-08, 11.025002)
