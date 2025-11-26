@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://d3lkmrv47stv3"]
+[gd_scene load_steps=32 format=3 uid="uid://d3lkmrv47stv3"]
 
 [ext_resource type="PackedScene" uid="uid://ij068wseolad" path="res://Assets/City_Pack_Asset/Paht/Stomach_3.fbx" id="1_y2yqg"]
 [ext_resource type="PackedScene" uid="uid://dntujgp8qn3fs" path="res://Assets/City_Pack_Asset/Paht/Paht_2.fbx" id="2_73ytm"]
@@ -6,9 +6,9 @@
 [ext_resource type="PackedScene" uid="uid://cjbckuk1tnq7e" path="res://Assets/City_Pack_Asset/Paht/Paht_3.fbx" id="4_2ve6t"]
 [ext_resource type="PackedScene" uid="uid://blc4wh26jkktn" path="res://Assets/City_Pack_Asset/Paht/grass.fbx" id="5_7xjic"]
 [ext_resource type="PackedScene" uid="uid://btoc6sr4ce40x" path="res://Assets/City_Pack_Asset/Paht/Sidewalk.fbx" id="5_iju8q"]
+[ext_resource type="PackedScene" uid="uid://dilflgpppccou" path="res://Assets/City_Pack_Asset/Rubbish_Lamp_Park/bench.glb" id="5_l5066"]
 [ext_resource type="PackedScene" uid="uid://ohuh7f8plqo5" path="res://Assets/City_Pack_Asset/Rubbish_Lamp_Park/Street Lamp_1.fbx" id="7_iekpf"]
 [ext_resource type="PackedScene" uid="uid://drilynskj1t6n" path="res://Assets/City_Pack_Asset/Rubbish_Lamp_Park/Park_1.fbx" id="7_xe6jm"]
-[ext_resource type="PackedScene" uid="uid://cpqum8o7r6p4f" path="res://Assets/City_Pack_Asset/Rubbish_Lamp_Park/seesaw_1.fbx" id="8_4q1qd"]
 [ext_resource type="PackedScene" uid="uid://ox7jxh2r57q4" path="res://Assets/City_Pack_Asset/Rubbish_Lamp_Park/Rubbish_6.fbx" id="9_tt8b8"]
 [ext_resource type="PackedScene" uid="uid://bk4ka4tib0lpr" path="res://Assets/City_Pack_Asset/Rubbish_Lamp_Park/Rubbish_5.fbx" id="10_iekpf"]
 [ext_resource type="PackedScene" uid="uid://cia6rd0ufyrj8" path="res://Assets/City_Pack_Asset/Rubbish_Lamp_Park/Rubbish_4.fbx" id="11_i57ke"]
@@ -22,9 +22,15 @@
 [ext_resource type="PackedScene" uid="uid://238r4octrv17" path="res://Assets/City_Pack_Asset/Tree/Tree_9.fbx" id="20_q8pi8"]
 [ext_resource type="PackedScene" uid="uid://dsmki11a4s2ca" path="res://Assets/City_Pack_Asset/Rubbish_Lamp_Park/park_bench.glb" id="21_7bhk5"]
 [ext_resource type="PackedScene" uid="uid://7m5vqb0o3p75" path="res://Assets/City_Pack_Asset/supermarket/supermarket.fbx" id="22_ji348"]
-[ext_resource type="PackedScene" uid="uid://bg4iwrlqebv3b" path="res://Assets/City_Pack_Asset/Home/Shop_1.fbx" id="23_de8pr"]
 [ext_resource type="PackedScene" uid="uid://botfhmugwumr7" path="res://Assets/City_Pack_Asset/Home/ultimate_japanese_konbini.glb" id="24_kucaa"]
 [ext_resource type="PackedScene" uid="uid://doxrxjsthypbg" path="res://Assets/City_Pack_Asset/Ev/Low Poly House.fbx" id="25_i8ph4"]
+[ext_resource type="PackedScene" uid="uid://dgq7x5u13h5iw" path="res://Assets/City_Pack_Asset/Rubbish_Lamp_Park/low_poly_seesaw.glb" id="26_7dspx"]
+[ext_resource type="PackedScene" uid="uid://bw1kga2yd5fr" path="res://Assets/City_Pack_Asset/Rubbish_Lamp_Park/swings.glb" id="27_x8kef"]
+[ext_resource type="PackedScene" uid="uid://cmg80fabnvyaf" path="res://Assets/City_Pack_Asset/Rubbish_Lamp_Park/Rubbish_2.fbx" id="28_3py4b"]
+[ext_resource type="PackedScene" uid="uid://ch1gn1ohpimdl" path="res://Assets/City_Pack_Asset/Rubbish_Lamp_Park/candy_shop.glb" id="28_l5066"]
+[ext_resource type="PackedScene" uid="uid://citn18n5yymvt" path="res://Assets/City_Pack_Asset/Rubbish_Lamp_Park/classic_shop.glb" id="29_7dspx"]
+[ext_resource type="PackedScene" uid="uid://ckwgxw4cdu8r4" path="res://Assets/City_Pack_Asset/Rubbish_Lamp_Park/shop.glb" id="30_x8kef"]
+[ext_resource type="PackedScene" uid="uid://74g8o41088tn" path="res://Assets/City_Pack_Asset/Rubbish_Lamp_Park/alcove_with_benches.glb" id="31_3py4b"]
 
 [node name="3D" type="Node3D"]
 
@@ -440,6 +446,12 @@ transform = Transform3D(0.00036645308, 0, -1, 0, 1, 0, 1, 0, 0.00036645308, 9.82
 
 [node name="Paht_103" parent="Ambient/Ambient Path" instance=ExtResource("4_2ve6t")]
 transform = Transform3D(0.00036645308, 0, -1, 0, 1, 0, 1, 0, 0.00036645308, 4.905571, 0.318, -38.527863)
+
+[node name="Sketchfab_Scene" parent="Ambient/Ambient Path" instance=ExtResource("5_l5066")]
+transform = Transform3D(0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, 21.75425, 0.67287123, 7.875084)
+
+[node name="Sketchfab_Scene2" parent="Ambient/Ambient Path" instance=ExtResource("5_l5066")]
+transform = Transform3D(-2.1855695e-09, 0, 0.05, 0, 0.05, 0, -0.05, 0, -2.1855695e-09, 7.260233, 0.67287123, 25.272093)
 
 [node name="Grass" type="Node" parent="Ambient"]
 
@@ -2295,9 +2307,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.954055, 0, -18.978117)
 [node name="Park_1" parent="Ambient/Park" instance=ExtResource("7_xe6jm")]
 transform = Transform3D(-0.04065494, 0, 0.9991732, 0, 1, 0, -0.9991732, 0, -0.04065494, 30.142487, 0.17109954, 27.10666)
 
-[node name="seesaw_1" parent="Ambient/Park" instance=ExtResource("8_4q1qd")]
-transform = Transform3D(0.664651, 0.02759818, 0, -0.055017997, 0.33340287, 0, 0, 0, 0.6592789, 19.657524, 0.5560124, 27.337818)
-
 [node name="Rubbish_6" parent="Ambient/Park" instance=ExtResource("9_tt8b8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.03027, 0, 32.460033)
 
@@ -2413,16 +2422,13 @@ transform = Transform3D(0.70710677, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, 0.70
 transform = Transform3D(0.70710677, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, 0.70710677, -39.342316, 0.445, -4.253126)
 
 [node name="Sketchfab_Scene" parent="." instance=ExtResource("21_7bhk5")]
-transform = Transform3D(21.308, 0, 0, 0, 21.078, 0, 0, 0, 15, 30.753487, 0.09198892, 12.164228)
+transform = Transform3D(21.308, 0, 0, 0, 21.078, 0, 0, 0, 19.634584, 30.753487, 0.09198892, 12.164228)
 
 [node name="supermarket" parent="." instance=ExtResource("22_ji348")]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 20.703205, 0.67926407, -36.471428)
 
-[node name="Shop_1" parent="." instance=ExtResource("23_de8pr")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.42344, 0, -47.189213)
-
 [node name="Sketchfab_Scene2" parent="." instance=ExtResource("24_kucaa")]
-transform = Transform3D(2.384976e-10, 0, -0.038, 0, 0.016, 0, 0.02, 0, 4.5314544e-10, -30.723341, 1.019906, -56.846657)
+transform = Transform3D(-8.7422775e-10, 0, -0.03146781, 0, 0.016943898, 0, 0.02, 0, -1.3755017e-09, -26.601751, 1.019906, -56.846657)
 
 [node name="Low Poly House" parent="." instance=ExtResource("25_i8ph4")]
 transform = Transform3D(0.023000786, 0.0110804485, 0.99967396, 0.00018264019, 0.9999385, -0.0110875815, -0.99973536, 0.00043760287, 0.022997346, -7.2506957, 0.34415054, 46.355934)
@@ -2432,3 +2438,24 @@ transform = Transform3D(0.010332203, 0, 0.99994665, 0, 1, 0, -0.99994665, 0, 0.0
 
 [node name="Low Poly House3" parent="." instance=ExtResource("25_i8ph4")]
 transform = Transform3D(-0.0115537895, 0, 0.99993324, 0, 1, 0, -0.99993324, 0, -0.0115537895, -22.166197, 0.3540163, 46.264595)
+
+[node name="Sketchfab_Scene3" parent="." instance=ExtResource("26_7dspx")]
+transform = Transform3D(0.5410477, 0.057430007, -0.44041932, -0.04453925, 0.6976402, 0.03625549, 0.4419091, 2.6077032e-09, 0.5428778, 18.842196, 0.11833882, 25.72571)
+
+[node name="Sketchfab_Scene4" parent="." instance=ExtResource("27_x8kef")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 35.00788, 4.7683716e-07, 19.498898)
+
+[node name="Rubbish_2" parent="." instance=ExtResource("28_3py4b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.0823402, 0, 28.204725)
+
+[node name="Sketchfab_Scene5" parent="." instance=ExtResource("28_l5066")]
+transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 16.735323, 0.6678667, -44.424244)
+
+[node name="Sketchfab_Scene6" parent="." instance=ExtResource("29_7dspx")]
+transform = Transform3D(0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, 22.212263, 0.6112659, -44.955635)
+
+[node name="Sketchfab_Scene7" parent="." instance=ExtResource("30_x8kef")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 29.909397, 0.8897815, -48.091167)
+
+[node name="Sketchfab_Scene8" parent="." instance=ExtResource("31_3py4b")]
+transform = Transform3D(-6.5567085e-09, 0, 0.15, 0, 0.15, 0, -0.15, 0, -6.5567085e-09, 33.632675, 3.479877, -28.679073)
