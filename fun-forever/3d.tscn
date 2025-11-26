@@ -32,11 +32,13 @@
 [ext_resource type="PackedScene" uid="uid://ckwgxw4cdu8r4" path="res://Assets/City_Pack_Asset/Rubbish_Lamp_Park/shop.glb" id="30_x8kef"]
 [ext_resource type="PackedScene" uid="uid://74g8o41088tn" path="res://Assets/City_Pack_Asset/Rubbish_Lamp_Park/alcove_with_benches.glb" id="31_3py4b"]
 [ext_resource type="PackedScene" uid="uid://8xsrnl4is442" path="res://Assets/Karakter/Barbarian.glb" id="32_uxehf"]
-[ext_resource type="Script" uid="uid://eg8olcxln8pj" path="res://character_body_3d.gd" id="33_1iu0a"]
+[ext_resource type="Script" path="res://character_body_3d.gd" id="33_1iu0a"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_1iu0a"]
+size = Vector3(12.2690735, 1, 12.331223)
 
-[sub_resource type="SeparationRayShape3D" id="SeparationRayShape3D_1iu0a"]
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_1iu0a"]
+height = 2.5
 
 [node name="3D" type="Node3D"]
 
@@ -45,13 +47,10 @@
 [node name="Center Grass" parent="Center" instance=ExtResource("1_y2yqg")]
 transform = Transform3D(1.7813065, 0, 0, 0, 1, 0, 0, 0, 1.7788843, 0.08626008, 0.64314485, 0.5378305)
 
-[node name="Area3D" type="Area3D" parent="Center/Center Grass"]
-transform = Transform3D(1.0000001, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
-priority = 1
-gravity_space_override = 1
+[node name="StaticBody3D" type="StaticBody3D" parent="Center/Center Grass"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Center/Center Grass/Area3D"]
-transform = Transform3D(0.9999999, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Center/Center Grass/StaticBody3D"]
+transform = Transform3D(1.0000001, 0, 0, 0, 1, 0, 0, 0, 1, 0.019363355, 0, 0.0064770877)
 shape = SubResource("BoxShape3D_1iu0a")
 
 [node name="Center Path" type="Node" parent="Center"]
@@ -2485,9 +2484,11 @@ transform = Transform3D(-0.99814224, 0, 0.0609265, 0, 1, 0, -0.0609265, 0, -0.99
 script = ExtResource("33_1iu0a")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Barbarian/CharacterBody3D"]
-shape = SubResource("SeparationRayShape3D_1iu0a")
+transform = Transform3D(1, 0, 1.5276123e-07, 0, 1, 0, -1.5276123e-07, 0, 1, 0, 1.1608324, 0)
+shape = SubResource("CapsuleShape3D_1iu0a")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Barbarian/CharacterBody3D"]
+transform = Transform3D(1.0000001, 0, 0, 0, 1, 0, 0, 0, 1.0000001, 0, 0, 0)
 
 [node name="SpringArm3D" type="SpringArm3D" parent="Barbarian/CharacterBody3D"]
 spring_length = 3.0
@@ -2495,3 +2496,6 @@ spring_length = 3.0
 [node name="Camera3D" type="Camera3D" parent="Barbarian/CharacterBody3D/SpringArm3D"]
 transform = Transform3D(-0.99961793, 0.02490338, 0.011994295, 0.027629986, 0.9126488, 0.4078097, -0.00079073384, 0.40798527, -0.9129882, -0.11214918, 3.123916, -1.8373019)
 current = true
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 25.301668, 0)
