@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=3 uid="uid://d3lkmrv47stv3"]
+[gd_scene load_steps=39 format=3 uid="uid://d3lkmrv47stv3"]
 
 [ext_resource type="PackedScene" uid="uid://ij068wseolad" path="res://Assets/City_Pack_Asset/Paht/Stomach_3.fbx" id="1_y2yqg"]
 [ext_resource type="PackedScene" uid="uid://dntujgp8qn3fs" path="res://Assets/City_Pack_Asset/Paht/Paht_2.fbx" id="2_73ytm"]
@@ -32,7 +32,6 @@
 [ext_resource type="PackedScene" uid="uid://ckwgxw4cdu8r4" path="res://Assets/City_Pack_Asset/Rubbish_Lamp_Park/shop.glb" id="30_x8kef"]
 [ext_resource type="PackedScene" uid="uid://74g8o41088tn" path="res://Assets/City_Pack_Asset/Rubbish_Lamp_Park/alcove_with_benches.glb" id="31_3py4b"]
 [ext_resource type="PackedScene" uid="uid://8xsrnl4is442" path="res://Assets/Karakter/Barbarian.glb" id="32_uxehf"]
-[ext_resource type="Script" uid="uid://eg8olcxln8pj" path="res://character_body_3d.gd" id="33_1iu0a"]
 [ext_resource type="Texture2D" uid="uid://dfp2wuo0q7v8h" path="res://Assets/sky_09_2k.png" id="34_1uyy1"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_1iu0a"]
@@ -2500,7 +2499,6 @@ transform = Transform3D(-6.5567085e-09, 0, 0.15, 0, 0.15, 0, -0.15, 0, -6.556708
 transform = Transform3D(-0.99814224, 0, 0.0609265, 0, 1, 0, -0.0609265, 0, -0.99814224, -0.849143, 2.7332802, -1.7251096)
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="Character/Barbarian"]
-script = ExtResource("33_1iu0a")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Character/Barbarian/CharacterBody3D"]
 transform = Transform3D(1, 0, 1.5276123e-07, 0, 1, 0, -1.5276123e-07, 0, 1, 0, 1.1608324, 0)
