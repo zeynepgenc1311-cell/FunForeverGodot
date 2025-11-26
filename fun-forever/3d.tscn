@@ -2364,6 +2364,9 @@ transform = Transform3D(0.70710665, 0, -0.7071069, 0, 1, 0, 0.7071069, 0, 0.7071
 [node name="Street Lamp_27" parent="Ambient/Park" instance=ExtResource("7_iekpf")]
 transform = Transform3D(0.70710665, 0, -0.7071069, 0, 1, 0, 0.7071069, 0, 0.70710665, -39.220844, 0.445, -33.72203)
 
+[node name="Street Lamp_28" parent="Ambient/Park" instance=ExtResource("7_iekpf")]
+transform = Transform3D(0.70710665, 0, -0.7071069, 0, 1, 0, 0.7071069, 0, 0.70710665, 4.908497, 0.445, -33.72203)
+
 [node name="Street Lamp_14" parent="Ambient/Park" instance=ExtResource("7_iekpf")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 19.315, 0.445, -4.360482)
 
