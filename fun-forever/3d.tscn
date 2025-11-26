@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=3 uid="uid://d3lkmrv47stv3"]
+[gd_scene load_steps=40 format=3 uid="uid://d3lkmrv47stv3"]
 
 [ext_resource type="PackedScene" uid="uid://ij068wseolad" path="res://Assets/City_Pack_Asset/Paht/Stomach_3.fbx" id="1_y2yqg"]
 [ext_resource type="PackedScene" uid="uid://dntujgp8qn3fs" path="res://Assets/City_Pack_Asset/Paht/Paht_2.fbx" id="2_73ytm"]
@@ -33,6 +33,7 @@
 [ext_resource type="PackedScene" uid="uid://74g8o41088tn" path="res://Assets/City_Pack_Asset/Rubbish_Lamp_Park/alcove_with_benches.glb" id="31_3py4b"]
 [ext_resource type="PackedScene" uid="uid://8xsrnl4is442" path="res://Assets/Karakter/Barbarian.glb" id="32_uxehf"]
 [ext_resource type="Script" path="res://character_body_3d.gd" id="33_1iu0a"]
+[ext_resource type="Texture2D" uid="uid://dfp2wuo0q7v8h" path="res://Assets/sky_09_2k.png" id="34_1uyy1"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_1iu0a"]
 size = Vector3(12.2690735, 1, 12.331223)
@@ -40,7 +41,19 @@ size = Vector3(12.2690735, 1, 12.331223)
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_1iu0a"]
 height = 2.5
 
-[sub_resource type="Environment" id="Environment_1iu0a"]
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_1iu0a"]
+sky_top_color = Color(0.105882354, 0.7411765, 0.9254902, 1)
+sky_cover = ExtResource("34_1uyy1")
+ground_bottom_color = Color(0.6059847, 0.6501597, 1, 1)
+
+[sub_resource type="Sky" id="Sky_1uyy1"]
+sky_material = SubResource("ProceduralSkyMaterial_1iu0a")
+
+[sub_resource type="Environment" id="Environment_m76of"]
+background_mode = 2
+sky = SubResource("Sky_1uyy1")
+ambient_light_color = Color(0.32642448, 0.53240716, 1, 1)
+ambient_light_energy = 2.0
 
 [node name="3D" type="Node3D"]
 
@@ -2440,10 +2453,6 @@ transform = Transform3D(0.70710677, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, 0.70
 [node name="Street Lamp_25" parent="Ambient/Park" instance=ExtResource("7_iekpf")]
 transform = Transform3D(0.70710677, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, 0.70710677, -39.342316, 0.445, -4.253126)
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.95566976, 0.2944407, 0, -0.2944407, 0.95566976, 0, 105.47119, -1.0772018)
-shadow_opacity = 0.3
-
 [node name="Building" type="Node" parent="."]
 
 [node name="Sketchfab_Scene" parent="Building" instance=ExtResource("21_7bhk5")]
@@ -2505,5 +2514,11 @@ spring_length = 3.0
 
 [node name="Camera3D" type="Camera3D" parent="Character/Barbarian/CharacterBody3D/SpringArm3D"]
 transform = Transform3D(-0.99961793, 0.02490338, 0.011994295, 0.027629986, 0.9126488, 0.4078097, -0.00079073384, 0.40798527, -0.9129882, -0.11214918, 3.123916, -1.8373019)
-environment = SubResource("Environment_1iu0a")
 current = true
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.95566976, 0.2944407, 0, -0.2944407, 0.95566976, 0, 105.47119, -1.0772018)
+shadow_opacity = 0.3
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_m76of")
