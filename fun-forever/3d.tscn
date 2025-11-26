@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://d3lkmrv47stv3"]
+[gd_scene load_steps=33 format=3 uid="uid://d3lkmrv47stv3"]
 
 [ext_resource type="PackedScene" uid="uid://ij068wseolad" path="res://Assets/City_Pack_Asset/Paht/Stomach_3.fbx" id="1_y2yqg"]
 [ext_resource type="PackedScene" uid="uid://dntujgp8qn3fs" path="res://Assets/City_Pack_Asset/Paht/Paht_2.fbx" id="2_73ytm"]
@@ -31,6 +31,7 @@
 [ext_resource type="PackedScene" uid="uid://citn18n5yymvt" path="res://Assets/City_Pack_Asset/Rubbish_Lamp_Park/classic_shop.glb" id="29_7dspx"]
 [ext_resource type="PackedScene" uid="uid://ckwgxw4cdu8r4" path="res://Assets/City_Pack_Asset/Rubbish_Lamp_Park/shop.glb" id="30_x8kef"]
 [ext_resource type="PackedScene" uid="uid://74g8o41088tn" path="res://Assets/City_Pack_Asset/Rubbish_Lamp_Park/alcove_with_benches.glb" id="31_3py4b"]
+[ext_resource type="PackedScene" uid="uid://8xsrnl4is442" path="res://Assets/Karakter/Barbarian.glb" id="32_uxehf"]
 
 [node name="3D" type="Node3D"]
 
@@ -2462,3 +2463,6 @@ transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 29.909397, 0.8897815, -
 
 [node name="Sketchfab_Scene8" parent="." instance=ExtResource("31_3py4b")]
 transform = Transform3D(-6.5567085e-09, 0, 0.15, 0, 0.15, 0, -0.15, 0, -6.5567085e-09, 33.632675, 3.479877, -28.679073)
+
+[node name="Barbarian" parent="." instance=ExtResource("32_uxehf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.849143, 0.74026513, -1.7251096)
