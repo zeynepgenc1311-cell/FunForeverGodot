@@ -32,7 +32,7 @@
 [ext_resource type="PackedScene" uid="uid://ckwgxw4cdu8r4" path="res://Assets/City_Pack_Asset/Rubbish_Lamp_Park/shop.glb" id="30_x8kef"]
 [ext_resource type="PackedScene" uid="uid://74g8o41088tn" path="res://Assets/City_Pack_Asset/Rubbish_Lamp_Park/alcove_with_benches.glb" id="31_3py4b"]
 [ext_resource type="PackedScene" uid="uid://8xsrnl4is442" path="res://Assets/Karakter/Barbarian.glb" id="32_uxehf"]
-[ext_resource type="Script" path="res://character_body_3d.gd" id="33_1iu0a"]
+[ext_resource type="Script" uid="uid://eg8olcxln8pj" path="res://character_body_3d.gd" id="33_1iu0a"]
 [ext_resource type="Texture2D" uid="uid://dfp2wuo0q7v8h" path="res://Assets/sky_09_2k.png" id="34_1uyy1"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_1iu0a"]
@@ -2513,7 +2513,7 @@ transform = Transform3D(1.0000001, 0, 0, 0, 1, 0, 0, 0, 1.0000001, 0, 0, 0)
 spring_length = 3.0
 
 [node name="Camera3D" type="Camera3D" parent="Character/Barbarian/CharacterBody3D/SpringArm3D"]
-transform = Transform3D(-0.99961793, 0.02490338, 0.011994295, 0.027629986, 0.9126488, 0.4078097, -0.00079073384, 0.40798527, -0.9129882, -0.11214918, 3.123916, -1.8373019)
+transform = Transform3D(-0.99984545, 0.015306253, 0.008634027, 0.016982105, 0.9679288, 0.25064996, -0.0045206137, 0.2507579, -0.9680393, -0.18198586, 3.2818499, -2.9814148)
 current = true
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
