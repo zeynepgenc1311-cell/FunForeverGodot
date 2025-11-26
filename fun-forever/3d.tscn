@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=3 uid="uid://d3lkmrv47stv3"]
+[gd_scene load_steps=37 format=3 uid="uid://d3lkmrv47stv3"]
 
 [ext_resource type="PackedScene" uid="uid://ij068wseolad" path="res://Assets/City_Pack_Asset/Paht/Stomach_3.fbx" id="1_y2yqg"]
 [ext_resource type="PackedScene" uid="uid://dntujgp8qn3fs" path="res://Assets/City_Pack_Asset/Paht/Paht_2.fbx" id="2_73ytm"]
@@ -39,6 +39,8 @@ size = Vector3(12.2690735, 1, 12.331223)
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_1iu0a"]
 height = 2.5
+
+[sub_resource type="Environment" id="Environment_1iu0a"]
 
 [node name="3D" type="Node3D"]
 
@@ -2438,64 +2440,70 @@ transform = Transform3D(0.70710677, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, 0.70
 [node name="Street Lamp_25" parent="Ambient/Park" instance=ExtResource("7_iekpf")]
 transform = Transform3D(0.70710677, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, 0.70710677, -39.342316, 0.445, -4.253126)
 
-[node name="Sketchfab_Scene" parent="." instance=ExtResource("21_7bhk5")]
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.95566976, 0.2944407, 0, -0.2944407, 0.95566976, 0, 105.47119, -1.0772018)
+shadow_opacity = 0.3
+
+[node name="Building" type="Node" parent="."]
+
+[node name="Sketchfab_Scene" parent="Building" instance=ExtResource("21_7bhk5")]
 transform = Transform3D(21.308, 0, 0, 0, 21.078, 0, 0, 0, 19.634584, 30.753487, 0.09198892, 12.164228)
 
-[node name="supermarket" parent="." instance=ExtResource("22_ji348")]
+[node name="supermarket" parent="Building" instance=ExtResource("22_ji348")]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 20.703205, 0.67926407, -36.471428)
 
-[node name="Sketchfab_Scene2" parent="." instance=ExtResource("24_kucaa")]
+[node name="Sketchfab_Scene2" parent="Building" instance=ExtResource("24_kucaa")]
 transform = Transform3D(-8.7422775e-10, 0, -0.03146781, 0, 0.016943898, 0, 0.02, 0, -1.3755017e-09, -26.601751, 1.019906, -56.846657)
 
-[node name="Low Poly House" parent="." instance=ExtResource("25_i8ph4")]
+[node name="Low Poly House" parent="Building" instance=ExtResource("25_i8ph4")]
 transform = Transform3D(0.023000786, 0.0110804485, 0.99967396, 0.00018264019, 0.9999385, -0.0110875815, -0.99973536, 0.00043760287, 0.022997346, -7.2506957, 0.34415054, 46.355934)
 
-[node name="Low Poly House2" parent="." instance=ExtResource("25_i8ph4")]
+[node name="Low Poly House2" parent="Building" instance=ExtResource("25_i8ph4")]
 transform = Transform3D(0.010332203, 0, 0.99994665, 0, 1, 0, -0.99994665, 0, 0.010332203, -14.783209, 0.3840387, 46.41202)
 
-[node name="Low Poly House3" parent="." instance=ExtResource("25_i8ph4")]
+[node name="Low Poly House3" parent="Building" instance=ExtResource("25_i8ph4")]
 transform = Transform3D(-0.0115537895, 0, 0.99993324, 0, 1, 0, -0.99993324, 0, -0.0115537895, -22.166197, 0.3540163, 46.264595)
 
-[node name="Sketchfab_Scene3" parent="." instance=ExtResource("26_7dspx")]
+[node name="Sketchfab_Scene3" parent="Building" instance=ExtResource("26_7dspx")]
 transform = Transform3D(0.5410477, 0.057430007, -0.44041932, -0.04453925, 0.6976402, 0.03625549, 0.4419091, 2.6077032e-09, 0.5428778, 18.842196, 0.11833882, 25.72571)
 
-[node name="Sketchfab_Scene4" parent="." instance=ExtResource("27_x8kef")]
+[node name="Sketchfab_Scene4" parent="Building" instance=ExtResource("27_x8kef")]
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 35.00788, 4.7683716e-07, 19.498898)
 
-[node name="Rubbish_2" parent="." instance=ExtResource("28_3py4b")]
+[node name="Rubbish_2" parent="Building" instance=ExtResource("28_3py4b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.0823402, 0, 28.204725)
 
-[node name="Sketchfab_Scene5" parent="." instance=ExtResource("28_l5066")]
+[node name="Sketchfab_Scene5" parent="Building" instance=ExtResource("28_l5066")]
 transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 16.735323, 0.6678667, -44.424244)
 
-[node name="Sketchfab_Scene6" parent="." instance=ExtResource("29_7dspx")]
+[node name="Sketchfab_Scene6" parent="Building" instance=ExtResource("29_7dspx")]
 transform = Transform3D(0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, 22.212263, 0.6112659, -44.955635)
 
-[node name="Sketchfab_Scene7" parent="." instance=ExtResource("30_x8kef")]
+[node name="Sketchfab_Scene7" parent="Building" instance=ExtResource("30_x8kef")]
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 29.909397, 0.8897815, -48.091167)
 
-[node name="Sketchfab_Scene8" parent="." instance=ExtResource("31_3py4b")]
+[node name="Sketchfab_Scene8" parent="Building" instance=ExtResource("31_3py4b")]
 transform = Transform3D(-6.5567085e-09, 0, 0.15, 0, 0.15, 0, -0.15, 0, -6.5567085e-09, 33.632675, 3.479877, -28.679073)
 
-[node name="Barbarian" parent="." instance=ExtResource("32_uxehf")]
+[node name="Character" type="Node" parent="."]
+
+[node name="Barbarian" parent="Character" instance=ExtResource("32_uxehf")]
 transform = Transform3D(-0.99814224, 0, 0.0609265, 0, 1, 0, -0.0609265, 0, -0.99814224, -0.849143, 2.7332802, -1.7251096)
 
-[node name="CharacterBody3D" type="CharacterBody3D" parent="Barbarian"]
+[node name="CharacterBody3D" type="CharacterBody3D" parent="Character/Barbarian"]
 script = ExtResource("33_1iu0a")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Barbarian/CharacterBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Character/Barbarian/CharacterBody3D"]
 transform = Transform3D(1, 0, 1.5276123e-07, 0, 1, 0, -1.5276123e-07, 0, 1, 0, 1.1608324, 0)
 shape = SubResource("CapsuleShape3D_1iu0a")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Barbarian/CharacterBody3D"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Character/Barbarian/CharacterBody3D"]
 transform = Transform3D(1.0000001, 0, 0, 0, 1, 0, 0, 0, 1.0000001, 0, 0, 0)
 
-[node name="SpringArm3D" type="SpringArm3D" parent="Barbarian/CharacterBody3D"]
+[node name="SpringArm3D" type="SpringArm3D" parent="Character/Barbarian/CharacterBody3D"]
 spring_length = 3.0
 
-[node name="Camera3D" type="Camera3D" parent="Barbarian/CharacterBody3D/SpringArm3D"]
+[node name="Camera3D" type="Camera3D" parent="Character/Barbarian/CharacterBody3D/SpringArm3D"]
 transform = Transform3D(-0.99961793, 0.02490338, 0.011994295, 0.027629986, 0.9126488, 0.4078097, -0.00079073384, 0.40798527, -0.9129882, -0.11214918, 3.123916, -1.8373019)
+environment = SubResource("Environment_1iu0a")
 current = true
-
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 25.301668, 0)
