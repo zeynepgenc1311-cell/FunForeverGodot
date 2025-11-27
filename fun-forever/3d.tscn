@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=3 uid="uid://d3lkmrv47stv3"]
+[gd_scene load_steps=41 format=3 uid="uid://d3lkmrv47stv3"]
 
 [ext_resource type="PackedScene" uid="uid://ij068wseolad" path="res://Assets/City_Pack_Asset/Paht/Stomach_3.fbx" id="1_y2yqg"]
 [ext_resource type="PackedScene" uid="uid://dntujgp8qn3fs" path="res://Assets/City_Pack_Asset/Paht/Paht_2.fbx" id="2_73ytm"]
@@ -34,6 +34,7 @@
 [ext_resource type="PackedScene" uid="uid://8xsrnl4is442" path="res://Assets/Karakter/Barbarian.glb" id="32_uxehf"]
 [ext_resource type="Script" uid="uid://eg8olcxln8pj" path="res://character_body_3d.gd" id="33_1iu0a"]
 [ext_resource type="Texture2D" uid="uid://dfp2wuo0q7v8h" path="res://Assets/sky_09_2k.png" id="34_1uyy1"]
+[ext_resource type="PackedScene" uid="uid://bj0dvveo2gsvp" path="res://Assets/Karakter/Karakter.fbx" id="35_m76of"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_1iu0a"]
 size = Vector3(12.2690735, 1, 12.331223)
@@ -2522,3 +2523,6 @@ shadow_opacity = 0.3
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_m76of")
+
+[node name="Karakter" parent="." instance=ExtResource("35_m76of")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3139713, 2.198527, -1.694982)
